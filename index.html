@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Estilos personalizados para mayor control y adaptarnos al diseño deseado */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.7;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.seccion-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.heading-seccion {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+.heading-seccion::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #FFD700;
+    transform: translateX(-50%);
+}
+.subheading-seccion {
+    font-size: 1.25rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 400;
+}
+.bienvenida-contenido {
+    text-align: center;
+}
+.nombre-principal {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+.titulo-profesional {
+    font-size: 1.5rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+.sobre-mi-contenido {
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.sobre-mi-parrafo {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}
+.proyecto-card {
+    background-color: #FFF;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.proyecto-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.08);
+}
+.proyecto-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #EEE;
+}
+.proyecto-contenido {
+    padding: 1.5rem;
+}
+.proyecto-titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 0.75rem;
+}
+.proyecto-descripcion {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.proyecto-tecnologias {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+.habilidad-item {
+    background-color: #FFF;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.habilidad-item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.13);
+}
+.contacto-info {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.contacto-info i {
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+    color: #003366;
+}
+.link-estilizado {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+.link-estilizado:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .heading-seccion {
+        font-size: 2rem;
+    }
+    .subheading-seccion {
+        font-size: 1.125rem;
+    }
+    .nombre-principal {
+        font-size: 2.5rem;
+    }
+    .titulo-profesional {
+        font-size: 1.25rem;
+    }
+    .seccion-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .proyecto-imagen {
+        height: 200px;
+    }
+    .proyecto-titulo {
+        font-size: 1.25rem;
+    }
+    .proyecto-descripcion {
+        font-size: 0.95rem;
+    }
+    .habilidad-item {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .contacto-info {
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container">
+            <h1 class="text-2xl font-semibold text-gray-800">Mi Portafolio Profesional</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="bienvenida" class="seccion-padding">
+            <div class="container">
+                <div class="bienvenida-contenido">
+                    <h2 class="nombre-principal">Linda Morales</h2>
+                    <h3 class="titulo-profesional">Auxiliar en Preparación Física y Entrenamiento Deportivo</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion-padding">
+            <div class="container">
+                <h2 class="heading-seccion">Sobre Mí</h2>
+                <p class="subheading-seccion">Un poco sobre mí.</p>
+                <div class="sobre-mi-contenido">
+                    <p class="sobre-mi-parrafo">
+                        Hola, soy Linda, tengo 20 años. Actualmente vivo y estudio en Colombia. Me gusta el deporte y enseñar.
+                        Soy amable, social, servicial y ordenada.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion-padding bg-gray-50">
+            <div class="container">
+                <h2 class="heading-seccion">Proyectos</h2>
+                <p class="subheading-seccion">Mis metas y aspiraciones profesionales.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="proyecto-card">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 1" class="proyecto-imagen">
+                        <div class="proyecto-contenido">
+                            <h3 class="proyecto-titulo">Proyecto 1</h3>
+                            <p class="proyecto-descripcion">
+                                Terminar mi técnico en Preparación Física con la aspiración de poder empezar a trabajar.
+                            </p>
+                            <p class="proyecto-tecnologias">
+                                Tecnologías: Preparación Física, Entrenamiento Deportivo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 2" class="proyecto-imagen">
+                        <div class="proyecto-contenido">
+                            <h3 class="proyecto-titulo">Proyecto 2</h3>
+                            <p class="proyecto-descripcion">
+                                Empezar en la universidad con la aspiración de adquirir más conocimiento y ser profesional.
+                            </p>
+                            <p class="proyecto-tecnologias">
+                                Tecnologías: Educación Superior, Desarrollo Profesional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 3" class="proyecto-imagen">
+                        <div class="proyecto-contenido">
+                            <h3 class="proyecto-titulo">Proyecto 3</h3>
+                            <p class="proyecto-descripcion">
+                                Realizar el examen del magisterio con la aspiración de tener un mejor salario.
+                            </p>
+                            <p class="proyecto-tecnologias">
+                                Tecnologías: Magisterio, Salario
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion-padding">
+            <div class="container">
+                <h2 class="heading-seccion">Habilidades</h2>
+                <p class="subheading-seccion">Mis competencias técnicas y blandas.</p>
+                <div class="flex flex-wrap justify-center">
+                    <span class="habilidad-item">Sentido de Pertenencia</span>
+                    <span class="habilidad-item">Compromiso</span>
+                    <span class="habilidad-item">Dedicación</span>
+                    <span class="habilidad-item">Trabajo con Amor</span>
+                    <span class="habilidad-item">Paciencia</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-padding bg-gray-100">
+            <div class="container">
+                <h2 class="heading-seccion">Contacto</h2>
+                <p class="subheading-seccion">No dudes en ponerte en contacto conmigo.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-8">
+                    <div class="contacto-info">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:19lnmt05@gmail.com" class="link-estilizado">19lnmt05@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container text-center">
+            <p>&copy; 2024 Mi Portafolio Profesional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+//Este archivo no es necesario para el funcionamiento de la página, pero se puede usar para agregar interactividad.
+</script>
+</body>
+</html>
